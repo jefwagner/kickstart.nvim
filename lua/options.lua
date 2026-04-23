@@ -66,4 +66,10 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- set text-width and wrapping behavior
+vim.opt.textwidth = 88
+vim.opt.formatoptions = 'tql'
+vim.opt.colorcolumn = '88'
+vim.opt.whichwrap:append '<,>,[,],'
+
 -- vim: ts=2 sts=2 sw=2 et

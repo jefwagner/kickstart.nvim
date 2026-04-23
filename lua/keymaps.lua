@@ -45,4 +45,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.keymap.set('n', 'j', 'gj', { silent = true })
+vim.keymap.set('n', 'k', 'gk', { silent = true })
+vim.keymap.set('v', 'j', 'gj', { silent = true })
+vim.keymap.set('v', 'k', 'gk', { silent = true })
+vim.keymap.set('i', '<Down>', '<C-o>gj', { silent = true })
+vim.keymap.set('i', '<Up>', '<C-o>gk', { silent = true })
+
 -- vim: ts=2 sts=2 sw=2 et
